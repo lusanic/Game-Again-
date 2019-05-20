@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>GameAgain</title>
+        <link rel="stylesheet" href="../CSS/WebStyle.css">
+        <link rel="stylesheet" href="../CSS/ProductPage.css">
+        <link rel="stylesheet" href="../CSS/form.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <style>
+            body{
+                margin:0;
+                height: 100%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="topnav">
+            <a href="Overview.html"><i class="fas fa-user"></i> About</a>
+            <a class="active" href="Products.html"><i class="fas fa-dice"></i> Games</a>
+            <a href="homePage.html"><i class="fa fa-home"></i> Home</a>
+        </div>
+        <header>
+            <h1 class="logo-h1">GameAgain</h1>
+            <p class="logo-p">USED GAMES, NEW EXPERIENCE</p>
+            <hr>
+        </header>
+
+        <main class="container">
+            <div class="left-column">
+                <img src="../Images/Game1.jpg"height="500" width="500" alt="Image 1">
+            </div>
+
+            <div class="right-column">
+
+                <div class="product-desc">
+                    <span>PS4/Xbox One</span>
+                    <h1>Assassin's Creed: Odyssey</h1>
+                    <p><b>Available: 5</b></p>
+                    <p>Assassin's Creed Odyssey is an action role-playing video game developed by Ubisoft Quebec and published by Ubisoft. It is the 11th major installment, and 21st overall, in the Assassin's Creed series and the successor to 2017's Assassin's Creed Origins.</p>
+                </div>
+
+                <div class="product-price">
+                        <span class="product-new-price">$39.99</span><span class="product-sale-price" style="color: #cacaca; font-size:20px;">$59.99</span>
+                </div>
+               
+                <button class="order-button" onclick="orderInfo()" >Place Order</button> 
+                
+            </div>
+        </main>
+
+        <div id="thisthing" style="display:none;">
+        <hr>
+            
+        <form action="mailto:someone@example.com" method="post" enctype="text/plain" class="form-container">        
+          <div class="form-row">
+            <div class="form-column">
+                <h1>1. Order Information</h1>
+                <label for="Item">Item:</label>
+                <input type="text" name="Item" value="Assassin's Creed: Odyssey" style="background:lightgray"disabled required>
+
+                <label for="quantity">Quantity*</label>
+                <input type="number" name="quantity" value="1" min="1" max="5"required>
+
+                <label for="firstName">First Name*</label>
+                <input type="text" name="firstName" pattern="[A-Za-z]{1,}"required autofocus>
+
+                <label for="lastName">Last Name*</label>
+                <input type="text" name="lastName" pattern="[A-Za-z]{1,}"required>
+
+                <label for="phoneNum">Phone Number*</label>
+                <input type="text" name="phoneNum" maxlength="10" pattern="[1-9]{1}[0-9]{9}"required>
+
+                <label for="street">Street Address*</label>
+                <input type="text" name="street" pattern="[1-9]{1}[0-9\s]{1,}[a-zA-Z]{1,}"required> 
+
+                <label for="city" style="margin-right:198px;">City*</label>
+                <label for="state" style="margin-right:189px;" >State*</label>
+                <label for="zipcode">ZIP Code*</label><br>
+                <input type="text" placeholder="City" name="city" style="width:30%; margin-right:auto;" pattern="[A-z]{1,}"required >
+                <input type="text" placeholder="State" name="state" style="width:30%; margin-right:auto;" maxlength="2" pattern="[A-Z]{2}"required>
+                <input type="text" placeholder="Zip" name="zipcode" style="width:30%; float:right;" maxlength="5" pattern="[1-9]{1}[0-9]{4}"required>
+
+                <hr>
+                <h1>2. Shipping</h1>
+                <label for="shipping">Shipping Method:</label><br>
+                <input type="radio" name="shipping" value="One-Day Delivery" id="one-Day" style="margin-top:10px;">
+                <label for="oneDay" style="margin-top:10px;">One-Day Delivery $13.99</label><br>
+
+                <input type="radio" name="shipping" value="Two-Day Delivery" id="two-Day" style="margin-top:10px;">
+                <label for="twoDay">Two-Day Delivery $6.99</label><br>
+
+                <input type="radio" name="shipping" checked="checked" value="Standard Delivery (3-5 business days)" id="standard" style="margin-top:10px; margin-bottom:10px;">
+                <label for="standard">Standard Delivery (3-5 business days) $1.99</label><br>
+
+                <hr>
+                <h1>3. Billing Information</h1>
+                <label for="cardNum" style="margin-right:262px;"><b>CARD NUMBER*</b></label>
+                <label for="month" style="margin-right:75px";><b>MM*</b></label>
+                <label for="year" style="margin-right:81px"><b>YY*</b></label>
+                <label for="csc"><b>CSC*</b></label><br>
+                <input type="text" name="cardNum" style="width:50%;margin-right:auto" maxlength="12" pattern="[1-9]{1}[0-9]{11}"required>
+                <input type="text" name="month" style="width:12%;margin-right:auto" maxlength="2" pattern="[0-1]{1}[1-9]{1}" placeholder="MM"required>
+                <input type="text" name="year" style="width:12%;margin-right:auto"maxlength="2" pattern="[0-9]{1}[0-9]{1}" placeholder="YY"required>
+                <input type="text" name="csc" style="width:12%;margin-right:auto" maxlength="3" pattern="[0-9]{3}"required>
+                <button class="btn cancel" onclick="closeForm()">Cancel</button>
+                <button type="submit" class="btn" onclick="orderInfo()" style="margin-right:10px;">Confirm</button> 
+                
+            </div>
+
+          </div>
+        </form>
+        </div>
+
+        <footer>
+            <p>Posted by: Luke Li | Contact: yiyanl@uci.edu</p>
+            <p>Copyright © Luke Li. All Rights Reserved</p>
+        </footer>
+
+    <script>
+        function orderInfo() {
+
+            document.getElementById("thisthing").style.display="block";
+        }
+
+        function closeForm() {
+            document.getElementById("thisthing").style.display = "none";
+        }
+
+    </script>
+
+    </body>
+</html>

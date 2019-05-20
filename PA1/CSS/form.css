@@ -1,0 +1,113 @@
+.form-popup {
+    display:none;
+    position: fixed;
+    bottom: 10px;
+    right: 200px;
+    float:left;
+    border: 7px solid #f1f1f1;
+    z-index: 9; 
+    background:white;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .form-container {
+    max-width: 900px;
+    height:1500px;
+    margin:0 auto;
+    padding: 15px;
+    position: relative;
+    display:flex;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .form-container input[type=text], .form-container input[type=number]{
+    width: 97%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  .form-container input:hover{
+      background:rgb(228, 228, 228);
+  }
+
+  .form-container label{
+      font-size: 12px;
+      opacity:0.8;
+  }
+
+  .form-right{
+      float:left;
+      margin-top:75px;
+  }
+  .form-container .btn {
+    display: inline-block;
+    cursor:pointer;
+    background-color: #7DC855;
+    font-family: 'Roboto', sans-serif;
+    border:none;
+    border-radius: 6px;
+    margin-top:30px;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 30px;
+    float:right;
+    width: 20%;
+    height:40px;
+    margin-bottom:10px;
+    opacity: 0.8;
+    transition: all .5s;
+  }
+
+  .form-container .cancel {
+    background-color: gray;
+    border:none;
+  }
+
+
+  .form-container .btn:hover {
+    opacity: 1;
+  }
+
+  .order-button {
+    display: inline-block;
+    cursor:pointer;
+    background-color: #7DC855;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 6px;
+    margin-top:15px;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 30px;
+    transition: all .5s;
+    border:none;
+  }
+  .order-button:hover {
+    background-color: #64af3d;
+  }
+
+  .form-window{
+      display:none;
+  }
+
+  .form-column{
+    float: left;
+    width: 75%;
+    padding: 10px;
+    height: 700px;
+  }
+
+  .form-row:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  input:focus{
+      outline-width: 1px;
+      outline-color:black;
+  }

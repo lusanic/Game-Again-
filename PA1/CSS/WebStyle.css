@@ -1,0 +1,292 @@
+
+body{
+  margin-right:0px;
+}
+.topnav{
+    width:100%;
+    margin:0px;
+    background-color: black;
+    overflow: auto;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    
+}
+
+.topnav a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .topnav a.active {
+    background-color: slategray;
+    color: white;
+  }
+
+  .hero {
+    width:100vw;
+    height:100vh;
+
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../Images/Cover3.gif");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+  }
+
+  .hero h1{
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: orangered;
+    margin-top:0;
+    margin-bottom:5px;
+    font-size:100px;
+  }
+
+  .hero p{
+    font-family:Verdana, Geneva, sans-serif;
+    font-style:italic;
+    font-size: 20px;
+    margin-top:0px;
+    color:white;
+  }
+
+  .hero .btn {
+    display: block;
+    width: 200px;
+    
+    padding: 1em;
+    margin-top: 60px;
+    margin-left:auto;
+    margin-right:auto;
+
+    color:white;
+    font-size:15px;
+    font-family:Verdana, Geneva, sans-serif;
+    text-decoration: none;
+    border-radius:25px;
+    border: 3px solid white;
+  }
+
+  .hero .btn:hover{
+    opacity:0.7;
+  }
+  
+  .headline{
+      margin:0px;
+  }
+
+  .front-p{
+    font-size:15px;
+    margin-left:1000px;
+    line-height: 2.0;
+  }
+
+
+  .cover{
+      opacity: 0.5;
+  }
+
+  .front-head{
+      font-family:Verdana, Geneva, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+  }
+
+  .front-p{
+    font-family:Verdana, Geneva, sans-serif;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    line-height: 1.5;
+  }
+
+  .logo {
+      text-align: left;
+  }
+
+  .logo-h1{
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: orangered;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    font-size: 25px;
+  }
+
+  .logo-h1-a{
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-decoration: none;
+    color: orangered;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-size: 25px;
+  }
+
+  .logo-p{
+    font-family:Verdana, Geneva, sans-serif;
+    font-style:italic;
+    font-variant: small-caps;
+    font-size: 10px;
+    margin-bottom:0px;
+    margin-left: 15px;
+    margin-top:0px;
+    
+    color:black;
+  }
+
+  
+  
+  .item button:hover{
+      opacity: 0.7;
+  }
+
+  .column {
+    float: left;
+    width: 250px;
+    padding: 0 30px;
+    
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {
+    margin-left:100px;
+    margin-right:100px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+ 
+.product-card {
+  background-color: #fefefe;
+  border: 1px solid #e6e6e6;
+  margin-bottom: 1.5rem;
+  margin-top:30px;
+  position:relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  background-color: #f1f1f1;
+  text-decoration: none;
+}
+
+.product-card a{
+  color:black;
+  text-decoration: none;
+}
+
+.product-card a:hover{
+  color:orangered;
+}
+
+
+.product-card-thumbnail {
+  display: block;
+  position: relative;
+}
+
+.product-card-thumbnail img:hover{
+  transform: scale(1.15, 1.15);
+}
+
+.product-card-title {
+  font-family: 'Open sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.45rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+
+.product-card-desc {
+  color: #8a8a8a;
+  display: block;
+  font-family: 'Open sans', sans-serif;
+  font-size: 0.85rem;
+  margin-top:5px;
+}
+
+.product-card-price {
+  color: #3e3e3e;
+  display: inline-block;
+  font-family: 'Open sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.8rem;
+}
+
+.product-card-sale {
+  color: #cacaca;
+  display: inline-block;
+  font-family: 'Open sans', sans-serif;
+  font-size: 0.85rem;
+  margin-left: 0.3rem;
+  text-decoration: line-through;
+}
+
+.product-card-colors {
+  display: block;
+  margin-top: 0.8rem;
+}
+
+.product-card-color-option {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+}
+
+
+
+  .page-title{
+      font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      color:black;
+      margin-left:50px;
+      margin-top:45px;
+      font-size:40px;
+      text-align:left;
+  }
+
+  .productback{
+    background-color:lightgray;
+  }
+
+  footer{
+    background-color:black;
+    width:1420px;
+    height: 50px;
+    text-align:center;
+    font-size:10.5px;
+    padding:10px;
+    line-height: 1.3;
+    color:white;
+    font-family: Verdana,Geneva,sans-serif; 
+    letter-spacing: 0.5px;
+  }
+
+
+
+
