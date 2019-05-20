@@ -3,7 +3,7 @@ Student: Luke Li 40629074
 
 -----------------------------------------------------------------------
 
-URL address: http://centaurus-3.ics.uci.edu:1077/PA1/HTML/homePage.html
+Open with: HTML/homePage.html
 
 Website layout:
 
